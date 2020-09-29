@@ -2188,7 +2188,6 @@ Block Post Widget CSS
   -o-transform: scale(1) rotate(0deg);
   transform: scale(1) rotate(0deg);
   opacity: 1;
-  width: 100%;
 }
 .np-slide-content-wrap .post-cats-list, .np-slide-content-wrap .post-title, .np-slide-content-wrap .np-post-meta{
   display: none;
