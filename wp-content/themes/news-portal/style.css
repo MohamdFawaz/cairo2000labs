@@ -1943,7 +1943,9 @@ Ticker CSS
 .np-ticker-block .lSSlideWrapper .lSFade {
   position: static;
 }
-
+.lSSlideWrapper .np-slide-content-wrap{
+  position: absolute ;
+}
 .post-cats-list span {
   display: inline-block;
   vertical-align: top;
