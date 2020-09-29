@@ -1998,7 +1998,7 @@ Slider CSS
   bottom: 0;
   left: 0;
   padding: 20px;
-  position: absolute;
+  position: sticky;
   width: 100%;
   background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
 }
