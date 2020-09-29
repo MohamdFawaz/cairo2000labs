@@ -27,11 +27,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 Reset
 --------------------------------------------------------------*/
 
-html, body, div, span, applet, object, iframe, 
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
-abbr, acronym, address, big, cite, code, del, dfn, em, font, 
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, 
-tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
     border: 0;
     font-family: inherit;
@@ -1351,7 +1351,7 @@ Grid CSS
 
 
 /*--------------------------------------------------------------
-Sidebar layout css 
+Sidebar layout css
 --------------------------------------------------------------*/
 
 #primary,
@@ -1974,7 +1974,7 @@ Slider CSS
 
 .news_portal_featured_slider .slider-posts {
   float: left;
-  width: 50%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -2186,8 +2186,11 @@ Block Post Widget CSS
   -o-transform: scale(1) rotate(0deg);
   transform: scale(1) rotate(0deg);
   opacity: 1;
+  width: 100%;
 }
-
+.np-slide-content-wrap .post-cats-list, .np-slide-content-wrap .post-title, .np-slide-content-wrap .np-post-meta{
+  display: none;
+}
 .np-post-thumb:hover img,
 .np-slide-thumb:hover img {
   -webkit-transform: scale(1.05) rotate(1deg);
@@ -2850,7 +2853,7 @@ article.hentry h1.entry-title {
 }
 
 /*--------------------------------------------------------------
-Error 404 css 
+Error 404 css
 --------------------------------------------------------------*/
 
 .error404 #primary {
@@ -2895,7 +2898,7 @@ Error 404 css
 }
 
 /*--------------------------------------------------------------
-scroll to top css 
+scroll to top css
 --------------------------------------------------------------*/
 
 #np-scrollup {
@@ -2931,7 +2934,7 @@ scroll to top css
 }
 
 /*--------------------------------------------------------------
-Wpform css 
+Wpform css
 --------------------------------------------------------------*/
 
 div.wpforms-container-full .wpforms-form input[type="submit"],
