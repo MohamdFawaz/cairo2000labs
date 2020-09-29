@@ -1,0 +1,40 @@
+{
+  "name": "FrontendBoilerplate",
+  "version": "1.0.0",
+  "description": "A frontend boilerplate / toolkit / starter kit.",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcnamee/wordpress-starter"
+  },
+  "keywords": [
+    "frontend",
+    "optimisation",
+    "boilerplate",
+    "toolkit",
+    "starter kit"
+  ],
+  "author": "Matt Mcnamee",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.13.x",
+    "del": "^2.2.x",
+    "gulp": "^3.9.x",
+    "gulp-autoprefixer": "^3.1.x",
+    "gulp-clean-css": "^2.0.x",
+    "gulp-concat": "^2.6.x",
+    "gulp-imagemin": "^3.0.x",
+    "gulp-sass": "^2.3.x",
+    "gulp-sourcemaps": "^1.6.x",
+    "gulp-uglify": "^1.5.x",
+    "run-sequence": "^1.2.x"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.1.1",
+    "jquery-colorbox": "^1.6.4",
+    "jquery-hoverintent": "^1.8.2",
+    "slick-carousel": "^1.6.0",
+    "superfish": "^1.7.9"
+  }
+}

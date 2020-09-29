@@ -1,0 +1,115 @@
+//  Site Header
+
+// Site Header ====================================================================
+
+.site-header {
+  background: $gray-lighter;
+  padding: 20px 0;
+
+  .header-logo {
+    font-size: 26px;
+    font-weight: 900;
+  }
+}
+
+// Drop Down Nav ====================================================================
+
+ul#primary-menu,
+ul#primary-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+ul#primary-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  float: none;
+  width: 100%;
+  border-collapse: separate;
+}
+
+ul#primary-menu li {
+  max-width: none;
+  float: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+ul#primary-menu > li {
+  vertical-align: middle;
+  text-align: center;
+}
+
+ul#primary-menu a,
+ul#primary-menu a:visited {
+  color: $brand-primary;
+  padding: 14px 15px;
+  text-decoration: none;
+  zoom: 1;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+ul#primary-menu a:hover,
+ul#primary-menu li.current > a {
+  // background: lighten($brand-primary, 8%);
+  color: lighten($brand-primary, 20%);
+}
+
+/* Drop downs */
+ul#primary-menu ul {
+  position: absolute;
+  display:  none;
+  top:      100%;
+  left:     0;
+  z-index:  99;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+  left: 50%;
+  padding: 10px 0;
+  background: #FAFAFA;
+  text-align: left;
+  min-width: 160px;
+}
+
+ul#primary-menu ul ul {
+  top:  0;
+  left: 100%;
+}
+
+ul#primary-menu li:hover > ul,
+ul#primary-menu li.sfHover > ul {
+  display: block;
+}
+
+ul#primary-menu ul li {
+  white-space:  nowrap;
+  *white-space: normal;
+}
+
+// Level 1
+ul#primary-menu > li > ul {
+  transform: translateX(-50%);
+}
+
+ul#primary-menu ul a,
+ul#primary-menu ul a:visited {
+  border:     0;
+  padding:    8px 15px;
+  background: #FAFAFA;
+  color:      #777777;
+  font-size:  13px;
+}
+
+ul#primary-menu ul a:hover {
+  background: #FAFAFA;
+  color:      #000000;
+}
