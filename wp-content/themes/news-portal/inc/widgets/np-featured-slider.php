@@ -15,7 +15,7 @@ class News_Portal_Featured_Slider extends WP_widget {
      * Register widget with WordPress.
      */
     public function __construct() {
-        $widget_ops = array( 
+        $widget_ops = array(
             'classname' => 'news_portal_featured_slider',
             'description' => __( 'Displays posts from selected categories in the slider with the featured section.', 'news-portal' )
         );
@@ -90,12 +90,35 @@ class News_Portal_Featured_Slider extends WP_widget {
                                     <li>
                                         <div class="np-single-slide-wrap">
                                             <div class="np-slide-thumb">
-                                                <a href="<?php the_permalink(); ?>">
-                                                    <?php the_post_thumbnail( 'news-portal-slider-medium' ); ?>
-                                                </a>
+
+<!--                                                <a href="--><?php //the_permalink(); ?><!--">-->
+                                                    <?php the_post_thumbnail('full'); ?>
+<!--                                                </a>-->
+                                              <div class="absolute-centered">
+                                                <p class="relative-left-homepage-header">
+                                                  Professor M.S.Elshorbagy
+                                                  <br>
+                                                  <small>Professor of clinical pathology</small>
+                                                  <br>
+                                                  <small>Al-Azhar university hospital</small>
+                                                  <br>
+                                                  <small>Head of immunalogy department</small>
+                                                </p>
+                                                <p class="relative-right-homepage-header" dir="rtl">
+                                                 معامل أ.د/ محمد سعيد الشوربجي
+                                                  <br>
+                                                  <small>استاذ التحاليل الطبية و امراض الدم</small>
+                                                  <br>
+                                                  <small>بمستشفيات جامعة الازهر</small>
+                                                  <br>
+                                                  <small>و رئيس وحدة المناعة بمستشفيات جامعة الازهر</small>
+                                                </p>
+                                              </div>
                                             </div><!-- .np-slide-thumb -->
                                             <div class="np-slide-content-wrap">
-                                                <?php news_portal_post_categories_list(); ?>
+                                              <?php the_post(); ?>
+
+                                              <?php news_portal_post_categories_list(); ?>
                                                 <h3 class="post-title large-size"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                                 <div class="np-post-meta"><?php news_portal_posted_on(); ?></div>
                                             </div> <!-- np-slide-content-wrap -->
@@ -148,7 +171,7 @@ class News_Portal_Featured_Slider extends WP_widget {
                                         </div><!-- .np-post-content -->
                                     </div> <!-- np-single-post -->
                                 </div><!-- .np-single-post-wrap -->
-                                    
+
                     <?php
                             }
                         }

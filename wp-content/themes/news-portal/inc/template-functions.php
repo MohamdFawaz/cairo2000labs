@@ -38,17 +38,17 @@ function news_portal_body_classes( $classes ) {
     if ( 'page' === get_post_type() ) {
         $sidebar_meta_option = get_post_meta( $post->ID, 'np_single_post_sidebar', true );
     }
-     
+
     if ( is_home() ) {
         $home_id = get_option( 'page_for_posts' );
         $sidebar_meta_option = get_post_meta( $home_id, 'np_single_post_sidebar', true );
     }
-    
+
     if ( empty( $sidebar_meta_option ) || is_archive() || is_search() ) {
         $sidebar_meta_option = 'default_sidebar';
     }
     $archive_sidebar        = get_theme_mod( 'news_portal_archive_sidebar', 'right_sidebar' );
-    $post_default_sidebar   = get_theme_mod( 'news_portal_default_post_sidebar', 'right_sidebar' );        
+    $post_default_sidebar   = get_theme_mod( 'news_portal_default_post_sidebar', 'right_sidebar' );
     $page_default_sidebar   = get_theme_mod( 'news_portal_default_page_sidebar', 'right_sidebar' );
     if ( $sidebar_meta_option == 'default_sidebar' || $sidebar_meta_option == 'default-sidebar' ) {
         if ( is_single() ) {
@@ -91,10 +91,10 @@ function news_portal_body_classes( $classes ) {
     }
 
     /**
-     * option for web site layout 
+     * option for web site layout
      */
     $news_portal_website_layout = esc_attr( get_theme_mod( 'news_portal_site_layout', 'fullwidth_layout' ) );
-    
+
     if ( !empty( $news_portal_website_layout ) ) {
         $classes[] = $news_portal_website_layout;
     }
@@ -147,7 +147,7 @@ if ( ! function_exists( 'news_portal_fonts_url' ) ) :
          */
         if ( 'off' !== _x( 'on', 'Titillium Web font: on or off', 'news-portal' ) ) {
             $font_families[] = 'Titillium Web:400,600,700,300';
-        }       
+        }
 
         if ( $font_families ) {
             $query_args = array(
@@ -179,7 +179,7 @@ function news_portal_admin_scripts( $hook ) {
     }
 
     wp_enqueue_script( 'jquery-ui-button' );
-    
+
     wp_enqueue_script( 'news-portal-admin-script', get_template_directory_uri() .'/assets/js/np-admin-scripts.js', array( 'jquery' ), esc_attr( $news_portal_version ), true );
 
     wp_enqueue_style( 'news-portal-admin-style', get_template_directory_uri() . '/assets/css/np-admin-style.css', array(), esc_attr( $news_portal_version ) );
@@ -192,7 +192,7 @@ function news_portal_admin_scripts( $hook ) {
  * @since 1.0.0
  */
 function news_portal_scripts() {
-    
+
     global $news_portal_version;
 
     wp_enqueue_style( 'news-portal-fonts', news_portal_fonts_url(), array(), null );
@@ -207,7 +207,7 @@ function news_portal_scripts() {
     if ( $dark_mode_option === 'show' ) {
         wp_enqueue_style( 'news-portal-dark-style', get_template_directory_uri().'/assets/css/np-dark.css', array(), esc_attr( $news_portal_version ) );
     }
-    
+
     wp_enqueue_style( 'news-portal-responsive-style', get_template_directory_uri().'/assets/css/np-responsive.css', array(), esc_attr( $news_portal_version ) );
 
     wp_enqueue_script( 'news-portal-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), esc_attr( $news_portal_version ), true );
@@ -215,7 +215,7 @@ function news_portal_scripts() {
     $menu_sticky_option = get_theme_mod( 'news_portal_menu_sticky_option', 'show' );
     if ( $menu_sticky_option == 'show' ) {
         wp_enqueue_script( 'jquery-sticky', get_template_directory_uri(). '/assets/library/sticky/jquery.sticky.js', array( 'jquery' ), '20150416', true );
-    
+
         wp_enqueue_script( 'np-sticky-menu-setting', get_template_directory_uri(). '/assets/library/sticky/sticky-setting.js', array( 'jquery-sticky' ), '20150309', true );
     }
 
@@ -251,7 +251,11 @@ if ( !function_exists( 'news_portal_social_media' ) ) :
                 $icon_class = $single_icon->social_icon_class;
                 $icon_url = $single_icon->social_icon_url;
                 if ( !empty( $icon_url ) ) {
+                  if (is_numeric($icon_url)){
+                    echo '<span class="social-link"><a href="'. 'https://wa.me/'.$icon_url .'" target="_blank"><i class="'. esc_attr( $icon_class ) .'"></i></a></span>';
+                  }else{
                     echo '<span class="social-link"><a href="'. esc_url( $icon_url ) .'" target="_blank"><i class="'. esc_attr( $icon_class ) .'"></i></a></span>';
+                  }
                 }
             }
             echo '</div><!-- .mt-social-icons-wrapper -->';
@@ -389,7 +393,7 @@ if ( ! function_exists( 'news_portal_dynamic_styles' ) ) :
         $news_portal_theme_color = get_theme_mod( 'news_portal_theme_color', '#029FB2' );
         $news_portal_theme_hover_color = news_portal_hover_color( $news_portal_theme_color, '-50' );
 
-        $news_portal_site_title_option = get_theme_mod( 'news_portal_site_title_option', 'true' );        
+        $news_portal_site_title_option = get_theme_mod( 'news_portal_site_title_option', 'true' );
         $news_portal_site_title_color = get_theme_mod( 'news_portal_site_title_color', '#029FB2' );
 
         $output_css = '';
@@ -400,7 +404,7 @@ if ( ! function_exists( 'news_portal_dynamic_styles' ) ) :
 
             $cat_hover_color    = news_portal_hover_color( $cat_color, '-50' );
             $cat_id             = $category->term_id;
-            
+
             if ( ! empty( $cat_color ) ) {
                 $output_css .= ".category-button.np-cat-". esc_attr( $cat_id ) ." a { background: ". esc_attr( $cat_color ) ."}";
 
@@ -421,7 +425,7 @@ if ( ! function_exists( 'news_portal_dynamic_styles' ) ) :
         $output_css .= ".navigation .nav-links a,.bttn,button,input[type='button'],input[type='reset'],input[type='submit'],.widget_search .search-submit,.np-archive-more .np-button:hover { border-color: ". esc_attr( $news_portal_theme_color ) ."}\n";
 
         $output_css .= ".comment-list .comment-body,.np-header-search-wrapper .search-form-main { border-top-color: ". esc_attr( $news_portal_theme_color ) ."}\n";
-        
+
         $output_css .= ".np-header-search-wrapper .search-form-main:before { border-bottom-color: ". esc_attr( $news_portal_theme_color ) ."}\n";
 
         $output_css .= "@media (max-width: 768px) { #site-navigation,.main-small-navigation li.current-menu-item > .sub-toggle i { background: ". esc_attr( $news_portal_theme_color ) ." !important } }\n";
@@ -463,20 +467,20 @@ if ( ! function_exists( 'news_portal_get_sidebar' ) ) :
         if ( 'page' === get_post_type() ) {
             $sidebar_meta_option = get_post_meta( $post->ID, 'np_single_post_sidebar', true );
         }
-         
+
         if ( is_home() ) {
             $set_id = get_option( 'page_for_posts' );
             $sidebar_meta_option = get_post_meta( $set_id, 'np_single_post_sidebar', true );
         }
-        
+
         if ( empty( $sidebar_meta_option ) || is_archive() || is_search() ) {
             $sidebar_meta_option = 'default_sidebar';
         }
-        
+
         $archive_sidebar      = get_theme_mod( 'news_portal_archive_sidebar', 'right_sidebar' );
         $post_default_sidebar = get_theme_mod( 'news_portal_default_post_sidebar', 'right_sidebar' );
         $page_default_sidebar = get_theme_mod( 'news_portal_default_page_sidebar', 'right_sidebar' );
-        
+
         if ( $sidebar_meta_option == 'default_sidebar' || $sidebar_meta_option == 'default-sidebar' ) {
             if ( is_single() ) {
                 if ( $post_default_sidebar == 'right_sidebar' ) {
@@ -543,7 +547,7 @@ endif;
 add_filter( 'wp_kses_allowed_html', 'news_portal_required_data_attributes' , 10, 4 );
 
 if ( ! function_exists( 'news_portal_required_data_attributes' ) ) :
-    
+
     /**
      * Added required attributes while using wp_kses by using `wp_kses_allowed_html` filter.
      *

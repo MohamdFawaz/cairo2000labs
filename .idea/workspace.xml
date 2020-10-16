@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d1bf5f2-e9cc-4e04-8f00-b95b9d112371" name="Default Changelist" comment="" />
+    <list default="true" id="9d1bf5f2-e9cc-4e04-8f00-b95b9d112371" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/news-portal/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/news-portal/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/news-portal/inc/hooks/np-custom-hooks.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/news-portal/inc/hooks/np-custom-hooks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/news-portal/inc/hooks/np-footer-hooks.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/news-portal/inc/hooks/np-footer-hooks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/news-portal/inc/hooks/np-header-hooks.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/news-portal/inc/hooks/np-header-hooks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/news-portal/inc/template-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/news-portal/inc/template-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/news-portal/inc/widgets/np-featured-slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/news-portal/inc/widgets/np-featured-slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/news-portal/rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/news-portal/rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/news-portal/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/news-portal/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +20,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -43,6 +57,9 @@
       <updated>1600701810965</updated>
       <workItem from="1600701812104" duration="1685000" />
       <workItem from="1600760407871" duration="9000" />
+      <workItem from="1602255270008" duration="726000" />
+      <workItem from="1602588027789" duration="5904000" />
+      <workItem from="1602854410275" duration="9622000" />
     </task>
     <servers />
   </component>
@@ -54,6 +71,27 @@
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="515" y="323" width="375" height="147" key="#WordPress/49.27.1317.741@49.27.1317.741" timestamp="1600701818552" />
+    <state width="516" height="446" key="SwitcherDM" timestamp="1602599235173">
+      <screen x="54" y="201" width="3232" height="879" />
+    </state>
+    <state width="516" height="446" key="SwitcherDM/54.201.3232.879@54.201.3232.879" timestamp="1602599235173" />
+    <state x="320" y="27" width="770" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602874646336">
+      <screen x="54" y="27" width="1312" height="741" />
+    </state>
+    <state x="320" y="27" width="770" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/54.27.1312.741@54.27.1312.741" timestamp="1602874646336" />
+    <state x="195" y="27" width="978" height="661" key="find.popup" timestamp="1602874661842">
+      <screen x="54" y="27" width="1312" height="741" />
+    </state>
+    <state x="401" y="201" width="720" height="783" key="find.popup/54.201.3232.879@54.201.3232.879" timestamp="1602599633051" />
+    <state x="195" y="27" width="978" height="661" key="find.popup/54.27.1312.741@54.27.1312.741" timestamp="1602874661842" />
+    <state x="374" y="174" width="672" height="677" key="run.anything.popup" timestamp="1602863574235">
+      <screen x="54" y="27" width="1312" height="741" />
+    </state>
+    <state x="374" y="174" width="672" height="677" key="run.anything.popup/54.27.1312.741@54.27.1312.741" timestamp="1602863574235" />
+    <state x="373" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602874713374">
+      <screen x="54" y="27" width="1312" height="741" />
+    </state>
+    <state x="373" y="89" width="672" height="678" key="search.everywhere.popup/54.27.1312.741@54.27.1312.741" timestamp="1602874713374" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$</wordpressPath>

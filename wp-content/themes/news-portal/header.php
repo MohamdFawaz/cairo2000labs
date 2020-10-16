@@ -17,6 +17,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link href="https://fonts.googleapis.com/css2?family=Lateef&display=swap" rel="stylesheet">
 
 <?php wp_head(); ?>
 </head>
@@ -45,7 +46,7 @@
 	<?php
 		$news_portal_top_header_option = get_theme_mod( 'news_portal_top_header_option', 'show' );
 		if ( $news_portal_top_header_option == 'show' ) {
-			
+
 			/**
 		     * news_portal_top_header hook
 		     *
@@ -73,7 +74,7 @@
 	     * @since 1.0.0
 	     */
 	    do_action( 'news_portal_header_section' );
-	    
+
 		$news_portal_ticker_option = get_theme_mod( 'news_portal_ticker_option', 'show' );
 		if ( $news_portal_ticker_option == 'show' && is_front_page() ) {
 

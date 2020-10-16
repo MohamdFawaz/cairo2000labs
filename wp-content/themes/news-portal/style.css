@@ -1244,7 +1244,9 @@ Media
 
 .site-main .gallery-columns-4 .gallery-item img {}
 
-
+.site-main .post-navigation{
+  display: none;
+}
 
 /* Make sure embeds and iframes fit their containers */
 
@@ -1364,6 +1366,7 @@ Sidebar layout css
 .home.blog #secondary {
   float: right;
   width: 27%;
+  display: none;
 }
 
 .page-template-magazine-template #primary {
@@ -1509,7 +1512,8 @@ Header CSS
 
 #masthead .site-branding {
   float: left;
-  margin: 20px 0;
+  margin: 20px 25px;
+
 }
 
 #masthead .np-header-ads-area {
@@ -2693,7 +2697,7 @@ Footer CSS
 }
 
 .site-info {
-  float: left;
+  text-align: center;
 }
 
 #footer-navigation ul {
@@ -2952,3 +2956,56 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
 .entry-meta .byline, .np-post-meta .byline {
 	display: none !important;
 }
+
+
+.absolute-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* absolute right text */
+.absolute-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.relative-right-homepage-header {
+  position: absolute;
+  text-align: right;
+  top: 80px;
+  left: 165px;
+  font-size: 30px;
+  color: white;
+  width: 360px;
+  font-family: 'Lateef', cursive;
+}
+
+/* absolute left text */
+.relative-left-homepage-header {
+  position: absolute;
+  top: 80px;
+  right: 165px;
+  font-size: 30px;
+  color: white;
+  width: 360px;
+}
+
+.mt-social-icons-wrapper i {
+  color: white;
+}
+
+.mt-social-icons-wrapper {
+  display: block;
+  position: relative;
+  float: right;
+  margin-top: 7px !important;
+}
+
+.mt-social-icons-wrapper .social-link{
+  padding-right: 15px;
+}
+

@@ -157,7 +157,7 @@ if ( ! function_exists( 'news_portal_site_branding_section' ) ) :
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
-			
+
 		</div><!-- .site-branding -->
 <?php
 	}
@@ -225,18 +225,9 @@ if ( ! function_exists( 'news_portal_primary_menu_section' ) ) :
 						<?php wp_nav_menu( array( 'theme_location' => 'news_portal_primary_menu', 'menu_id' => 'primary-menu' ) );
 						?>
 					</nav><!-- #site-navigation -->
-
-					<?php
-						$news_portal_search_icon_option = get_theme_mod( 'news_portal_search_icon_option', 'show' );
-						if ( $news_portal_search_icon_option == 'show' ) {
-					?>
-						<div class="np-header-search-wrapper">                    
-			                <span class="search-main"><a href="javascript:void(0)"><i class="fa fa-search"></i></a></span>
-			                <div class="search-form-main np-clearfix">
-				                <?php get_search_form(); ?>
-				            </div>
-						</div><!-- .np-header-search-wrapper -->
-					<?php } ?>
+          <?php
+            news_portal_social_media();
+          ?>
 				</div>
 			</div>
 		</div><!-- .np-header-menu-wrapper -->
@@ -311,7 +302,7 @@ if ( ! function_exists( 'news_portal_ticker_content' ) ) :
 					echo '<ul id="newsTicker" class="cS-hidden">';
 					while( $ticker_query->have_posts() ) {
 						$ticker_query->the_post();
-			?>			
+			?>
 						<li><div class="news-ticker-title"><?php news_portal_post_categories_list(); ?> <a href="<?php the_permalink(); ?>"><?php the_title();?></a></div></li>
 			<?php
 					}
@@ -336,7 +327,7 @@ if ( ! function_exists( 'news_portal_ticker_section_end' ) ) :
 		echo '</div><!-- .mt-container -->';
 		echo '</div><!-- .np-ticker-wrapper -->';
 	}
-	
+
 endif;
 
 /**

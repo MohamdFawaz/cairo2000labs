@@ -17,7 +17,7 @@ if ( ! function_exists( 'news_portal_related_posts_start' ) ) :
      * @since 1.0.0
      */
 	function news_portal_related_posts_start() {
-		echo '<div class="np-related-section-wrapper">';
+		echo '<div class="np-related-section-wrapper" style="display: none">';
 	}
 
 endif;
@@ -31,7 +31,7 @@ if ( ! function_exists( 'news_portal_related_posts_section' ) ) :
      */
 	function news_portal_related_posts_section() {
 		$news_portal_related_option = get_theme_mod( 'news_portal_related_posts_option', 'show' );
-		
+
 		global $post;
         if ( empty( $post ) ) {
             $post_id = '';
@@ -48,7 +48,7 @@ if ( ! function_exists( 'news_portal_related_posts_section' ) ) :
 		if ( !empty( $news_portal_related_title ) ) {
 			echo '<h2 class="np-related-title np-clearfix">'. esc_html( $news_portal_related_title ) .'</h2>';
 		}
-        
+
         if ( $categories ) {
             $category_ids = array();
             foreach( $categories as $category_ed ) {
@@ -57,7 +57,7 @@ if ( ! function_exists( 'news_portal_related_posts_section' ) ) :
         }
 
 		$news_portal_post_count = apply_filters( 'news_portal_related_posts_count', 3 );
-		
+
 		$related_args = array(
 				'no_found_rows'            	=> true,
                 'update_post_meta_cache'   	=> false,
@@ -68,7 +68,7 @@ if ( ! function_exists( 'news_portal_related_posts_section' ) ) :
                 'category__in'				=> $category_ids,
 				'posts_per_page' 		   	=> $news_portal_post_count
 			);
-		
+
 		$related_query = new WP_Query( $related_args );
 		if ( $related_query->have_posts() ) {
 			echo '<div class="np-related-posts-wrap np-clearfix">';
@@ -107,7 +107,7 @@ if ( ! function_exists( 'news_portal_related_posts_end' ) ) :
 	function news_portal_related_posts_end() {
 		echo '</div><!-- .np-related-section-wrapper -->';
 	}
-    
+
 endif;
 
 /**

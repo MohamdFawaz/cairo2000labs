@@ -312,7 +312,7 @@ article.hentry .entry-footer>span {
     left: auto;
 }
 
-#site-navigation ul.sub-menu ul, 
+#site-navigation ul.sub-menu ul,
 #site-navigation ul.children ul {
     left: -100%;
     right: auto;
@@ -324,7 +324,7 @@ article.hentry .entry-footer>span {
     right: auto;
 }
 
-#site-navigation ul#primary-menu li.menu-item-has-children a, 
+#site-navigation ul#primary-menu li.menu-item-has-children a,
 #site-navigation #primary-menu li.page_item_has_children a {
     padding-left: 30px;
     padding-right: 15px;
@@ -521,7 +521,7 @@ article.hentry .entry-footer>span {
     margin-left: 0;
 }
 
-.news_portal_block_posts .layout2 .np-primary-block-wrap .np-single-post, 
+.news_portal_block_posts .layout2 .np-primary-block-wrap .np-single-post,
 .news_portal_block_posts .layout2 .np-secondary-block-wrap .np-single-post {
     margin-right: 3%;
     margin-left: -4px;
@@ -619,7 +619,7 @@ article.hentry .entry-footer>span {
 }
 
 .site-info {
-    float: right;
+    text-align: center;
 }
 
 #footer-navigation ul {
