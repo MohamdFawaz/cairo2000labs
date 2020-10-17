@@ -180,23 +180,23 @@
     padding: 0 !important;
   }
 
-  #site-navigation ul>li:hover>.sub-toggle,
-  #site-navigation ul>li.current-menu-item .sub-toggle,
-  #site-navigation ul>li.current-menu-ancestor .sub-toggle {
+  #site-navigation ul > li:hover > .sub-toggle,
+  #site-navigation ul > li.current-menu-item .sub-toggle,
+  #site-navigation ul > li.current-menu-ancestor .sub-toggle {
     background: #fff;
   }
 
-  .main-small-navigation li.current-menu-item>.sub-toggle {
+  .main-small-navigation li.current-menu-item > .sub-toggle {
     background: #ffffff none repeat scroll 0 0;
   }
 
-  .main-small-navigation li.current-menu-item>.sub-toggle i {
+  .main-small-navigation li.current-menu-item > .sub-toggle i {
     color: #029FB2;
   }
 
   .menu-primary-container .sub-menu,
-  #site-navigation li.menu-item-has-children>a:before,
-  #site-navigation ul li.page_item_has_children>a:before {
+  #site-navigation li.menu-item-has-children > a:before,
+  #site-navigation ul li.page_item_has_children > a:before {
     display: none;
   }
 
@@ -221,13 +221,13 @@
     transform: translateY(0);
   }
 
-  #site-navigation ul>li:hover>.sub-menu,
-  #site-navigation ul>li:hover>.children {
+  #site-navigation ul > li:hover > .sub-menu,
+  #site-navigation ul > li:hover > .children {
     top: 0;
   }
 
-  #site-navigation ul#primary-menu>li:hover>a::after,
-  #site-navigation ul#primary-menu>li.current-menu-item>a::after {
+  #site-navigation ul#primary-menu > li:hover > a::after,
+  #site-navigation ul#primary-menu > li.current-menu-item > a::after {
     display: none;
   }
 
@@ -243,8 +243,30 @@
     float: none;
     width: 100%;
   }
-}
 
+  .relative-left-homepage-header {
+    position: relative;
+    display: inline;
+    top: 40px;
+    right: 105px;
+    font-size: 10px;
+    color: white;
+    width: 125px;
+  }
+
+  .relative-right-homepage-header {
+    position: absolute;
+    text-align: right;
+    top: 43px;
+    left: 0px;
+    padding-right: 4px;
+    /* right: 11px; */
+    font-size: 14px;
+    color: white;
+    width: 238px;
+    font-family: 'Lateef', cursive;
+  }
+}
 
 
 /* Landscape phones and down */
