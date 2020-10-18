@@ -94,26 +94,6 @@ class News_Portal_Featured_Slider extends WP_widget {
 <!--                                                <a href="--><?php //the_permalink(); ?><!--">-->
                                                     <?php the_post_thumbnail('full'); ?>
 <!--                                                </a>-->
-                                              <div class="absolute-centered">
-                                                <p class="relative-left-homepage-header">
-                                                  Professor M.S.Elshorbagy
-                                                  <br>
-                                                  <small>Professor of clinical pathology</small>
-                                                  <br>
-                                                  <small>Al-Azhar university hospital</small>
-                                                  <br>
-                                                  <small>Head of immunalogy department</small>
-                                                </p>
-                                                <p class="relative-right-homepage-header" dir="rtl">
-                                                 معامل أ.د/ محمد سعيد الشوربجي
-                                                  <br>
-                                                  <small>استاذ التحاليل الطبية و امراض الدم</small>
-                                                  <br>
-                                                  <small>بمستشفيات جامعة الازهر</small>
-                                                  <br>
-                                                  <small>و رئيس وحدة المناعة بمستشفيات جامعة الازهر</small>
-                                                </p>
-                                              </div>
                                             </div><!-- .np-slide-thumb -->
                                             <div class="np-slide-content-wrap">
                                               <?php the_post(); ?>

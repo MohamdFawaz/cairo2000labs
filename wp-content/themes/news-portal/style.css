@@ -2974,24 +2974,19 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
 }
 
 .relative-right-homepage-header {
-  position: absolute;
-  text-align: right;
-  top: 80px;
-  left: 165px;
+  position: relative;
   font-size: 30px;
-  color: white;
-  width: 360px;
+  color: black;
   font-family: 'Lateef', cursive;
 }
 
 /* absolute left text */
 .relative-left-homepage-header {
-  position: absolute;
-  top: 80px;
-  right: 165px;
+  position: relative;
   font-size: 30px;
-  color: white;
-  width: 360px;
+  color: black;
+  float: left;
+  font-family: 'Lateef', cursive;
 }
 
 .mt-social-icons-wrapper i {

@@ -245,26 +245,11 @@
   }
 
   .relative-left-homepage-header {
-    position: relative;
-    display: inline;
-    top: 40px;
-    right: 105px;
-    font-size: 10px;
-    color: white;
-    width: 125px;
+    font-size: 14px;
   }
 
   .relative-right-homepage-header {
-    position: absolute;
-    text-align: right;
-    top: 43px;
-    left: 0px;
-    padding-right: 4px;
-    /* right: 11px; */
     font-size: 14px;
-    color: white;
-    width: 238px;
-    font-family: 'Lateef', cursive;
   }
 }
 
