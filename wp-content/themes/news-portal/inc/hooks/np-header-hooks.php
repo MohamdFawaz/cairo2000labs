@@ -219,7 +219,7 @@ if ( ! function_exists( 'news_portal_primary_menu_section' ) ) :
 
 							<div class="np-home-icon">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                  <img src="http://cairo2000labs.local/wp-content/uploads/2020/11/white-transparent-768x755.png"
+                  <img src="https://cairo2000labs.com/wp-content/uploads/2020/11/white-transparent-768x755.png"
                        class="custom-logo" alt="Cairo 2000 Labs">
                 </a>
 							</div><!-- .np-home-icon -->
