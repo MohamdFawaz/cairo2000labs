@@ -19,10 +19,10 @@ get_header();
  */
 	if ( is_active_sidebar( 'news_portal_home_top_section_area' ) ) {
 ?>
-		<div class="np-home-top-section np-clearfix">
+		<div class="np-home-top-section np-clearfix" data-aos="zoom-out">
 			<?php dynamic_sidebar( 'news_portal_home_top_section_area' ); ?>
 		</div><!-- .np-home-top-section -->
-    <div class=""> <!--absolute-centered-->
+    <div data-aos="fade-right" class=""> <!--absolute-centered-->
       <p class="relative-left-homepage-header">
         Professor M.S.Elshorbagy
         <br>
@@ -73,7 +73,7 @@ get_header();
  */
 	if ( is_active_sidebar( 'news_portal_home_bottom_section_area' ) ) {
 ?>
-		<div class="np-home-bottom-section">
+		<div class="np-home-bottom-section" data-aos="fade-up">
 			<?php dynamic_sidebar( 'news_portal_home_bottom_section_area' ); ?>
 		</div><!-- .np-home-bottom-section -->
 <?php

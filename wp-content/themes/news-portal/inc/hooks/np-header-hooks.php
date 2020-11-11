@@ -211,17 +211,21 @@ if ( ! function_exists( 'news_portal_primary_menu_section' ) ) :
 ?>
 		<div id="np-menu-wrap" class="np-header-menu-wrapper">
 			<div class="np-header-menu-block-wrap">
-				<div class="mt-container">
+				<div class="mt-container ">
 					<?php
 						$news_portal_home_icon_option = get_theme_mod( 'news_portal_home_icon_option', 'show' );
 						if ( $news_portal_home_icon_option == 'show' ) {
 					?>
+
 							<div class="np-home-icon">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> <i class="fa fa-home"> </i> </a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                  <img src="http://cairo2000labs.local/wp-content/uploads/2020/11/white-transparent-768x755.png"
+                       class="custom-logo" alt="Cairo 2000 Labs">
+                </a>
 							</div><!-- .np-home-icon -->
 					<?php } ?>
                     <a href="javascript:void(0)" class="menu-toggle hide"> <i class="fa fa-navicon"> </i> </a>
-					<nav id="site-navigation" class="main-navigation" role="navigation">
+					<nav id="site-navigation" class="main-navigation padding-top-30" role="navigation" data-aos="fade-right">
 						<?php wp_nav_menu( array( 'theme_location' => 'news_portal_primary_menu', 'menu_id' => 'primary-menu' ) );
 						?>
 					</nav><!-- #site-navigation -->
@@ -254,11 +258,11 @@ endif;
  *
  * @since 1.0.0
  */
-add_action( 'news_portal_header_section', 'news_portal_header_section_start', 5 );
-add_action( 'news_portal_header_section', 'news_portal_header_logo_ads_section_start', 10 );
-add_action( 'news_portal_header_section', 'news_portal_site_branding_section', 15 );
-add_action( 'news_portal_header_section', 'news_portal_header_ads_section', 20 );
-add_action( 'news_portal_header_section', 'news_portal_header_logo_ads_section_end', 25 );
+//add_action( 'news_portal_header_section', 'news_portal_header_section_start', 5 );
+//add_action( 'news_portal_header_section', 'news_portal_header_logo_ads_section_start', 10 );
+//add_action( 'news_portal_header_section', 'news_portal_site_branding_section', 15 );
+//add_action( 'news_portal_header_section', 'news_portal_header_ads_section', 20 );
+//add_action( 'news_portal_header_section', 'news_portal_header_logo_ads_section_end', 25 );
 add_action( 'news_portal_header_section', 'news_portal_primary_menu_section', 30 );
 add_action( 'news_portal_header_section', 'news_portal_header_section_end', 35 );
 

@@ -682,3 +682,11 @@ article.hentry .entry-footer>span {
     left: 20px;
     right: auto;
 }
+.mt-social-icons-wrapper {
+  display: block;
+  position: relative;
+  float: left;
+  margin-top: 40px !important;
+}
+
+

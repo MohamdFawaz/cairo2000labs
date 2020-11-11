@@ -23,3 +23,8 @@ node_modules/
 *.sqlite
 
 /wp-config.php
+.htaccess
+.htaccess.zip
+cairo2000labs.error_log
+cairo2000labs.in-access_log
+wp-config.php

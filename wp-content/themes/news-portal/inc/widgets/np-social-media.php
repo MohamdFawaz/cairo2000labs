@@ -15,7 +15,7 @@ class News_Portal_Social_Media extends WP_widget {
      * Register widget with WordPress.
      */
     public function __construct() {
-        $widget_ops = array( 
+        $widget_ops = array(
             'classname' => 'news_portal_social_media',
             'description' => __( 'A widget shows the social media icons.', 'news-portal' )
         );
@@ -27,7 +27,7 @@ class News_Portal_Social_Media extends WP_widget {
      * Array is used in update and form functions
      */
     private function widget_fields() {
-        
+
         $fields = array(
 
             'widget_title' => array(

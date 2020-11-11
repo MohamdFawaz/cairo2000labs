@@ -246,7 +246,7 @@ if ( !function_exists( 'news_portal_social_media' ) ) :
         $get_social_media_icons     = get_theme_mod( 'social_media_icons', '' );
         $get_decode_social_media    = json_decode( $get_social_media_icons );
         if ( ! empty( $get_decode_social_media ) ) {
-            echo '<div class="mt-social-icons-wrapper">';
+            echo '<div class="mt-social-icons-wrapper" data-aos="zoom-out-left">';
             foreach ( $get_decode_social_media as $single_icon ) {
                 $icon_class = $single_icon->social_icon_class;
                 $icon_url = $single_icon->social_icon_url;

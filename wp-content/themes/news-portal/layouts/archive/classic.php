@@ -15,7 +15,7 @@ if( ! has_post_thumbnail() ) {
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( esc_attr( $extra_post_class ) ); ?>>	
+<article id="post-<?php the_ID(); ?>" <?php post_class( esc_attr( $extra_post_class ) ); ?>>
 
 	<div class="np-article-thumb">
 		<a href="<?php the_permalink(); ?>">
