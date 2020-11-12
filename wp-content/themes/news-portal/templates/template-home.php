@@ -23,8 +23,8 @@ get_header();
 			<?php dynamic_sidebar( 'news_portal_home_top_section_area' ); ?>
 		</div><!-- .np-home-top-section -->
     <div data-aos="fade-right" class=""> <!--absolute-centered-->
-      <p class="relative-left-homepage-header">
-        Professor M.S.Elshorbagy
+      <p class="relative-left-homepage-header" style="font-size: 33px;text-align: center">
+        <b>Professor M.S.Elshorbagy</b>
         <br>
         <small>Professor of clinical pathology</small>
         <br>
@@ -32,8 +32,8 @@ get_header();
         <br>
         <small>Head of immunalogy department</small>
       </p>
-      <p class="relative-right-homepage-header" dir="rtl">
-        معامل أ.د/ محمد سعيد الشوربجي
+      <p class="relative-right-homepage-header" dir="rtl" style="font-size: 33px;text-align: center;left: 300px">
+        <b>معامل أ.د/ محمد سعيد الشوربجي</b>
         <br>
         <small>استاذ التحاليل الطبية و امراض الدم</small>
         <br>

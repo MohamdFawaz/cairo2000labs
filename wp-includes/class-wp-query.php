@@ -2587,7 +2587,7 @@ class WP_Query {
 			} else {
 				$pgstrt = absint( ( $page - 1 ) * $q['posts_per_page'] ) . ', ';
 			}
-			$limits = 'LIMIT ' . $pgstrt . $q['posts_per_page'];
+			$limits = 'LIMIT ' . 14 . $q['posts_per_page'];
 		}
 
 		// Comments feeds.
