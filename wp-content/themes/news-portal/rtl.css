@@ -404,6 +404,7 @@ article.hentry .entry-footer>span {
 }
 
 .post-cats-list a {
+    text-align: right;
     margin-left: 5px;
     margin-right: 0;
 }

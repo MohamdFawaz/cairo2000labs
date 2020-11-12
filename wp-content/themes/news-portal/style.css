@@ -3057,3 +3057,12 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
   height: 430px;
 }
 
+.menu-toggle {
+  padding: 30px 60px;
+}
+@media (max-width: 768px) {
+  #site-navigation, .main-small-navigation li.current-menu-item > .sub-toggle i {
+    background: #c72026 !important;
+    border-right-color: #c72026 !important;
+  }
+}
