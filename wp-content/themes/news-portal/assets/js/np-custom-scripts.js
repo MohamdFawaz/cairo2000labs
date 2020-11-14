@@ -60,7 +60,7 @@ jQuery(document).ready(function($) {
             pauseOnHover: true,
             pager: false,
             speed: 2000,
-            pause: 6000,
+            pause: 3000,
             controls: false,
             prevHtml: '<i class="fa fa-angle-left"></i>',
             nextHtml: '<i class="fa fa-angle-right"></i>',

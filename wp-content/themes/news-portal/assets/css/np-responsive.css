@@ -246,10 +246,14 @@
 
   .relative-left-homepage-header {
     font-size: 14px;
+    clear: both;
+    left: 50px;
   }
 
   .relative-right-homepage-header {
     font-size: 14px;
+    left: 0px !important;
+    clear: both;
   }
 }
 
