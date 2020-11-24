@@ -32,7 +32,7 @@ get_header();
         <br>
         <small>Head of immunalogy department</small>
       </p>
-      <p class="relative-right-homepage-header" dir="rtl" style="font-size: 33px;text-align: center;left: 300px">
+      <p class="relative-right-homepage-header" dir="rtl" style="font-size: 33px;text-align: center;">
         <b>معامل أ.د/ محمد سعيد الشوربجي</b>
         <br>
         <small>استاذ التحاليل الطبية و امراض الدم</small>
