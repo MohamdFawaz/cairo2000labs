@@ -208,7 +208,7 @@ function news_portal_scripts() {
         wp_enqueue_style( 'news-portal-dark-style', get_template_directory_uri().'/assets/css/np-dark.css', array(), esc_attr( $news_portal_version ) );
     }
 
-    wp_enqueue_style( 'news-portal-responsive-style', get_template_directory_uri().'/assets/css/np-responsive.css?v=1.3', array(), esc_attr( $news_portal_version ) );
+    wp_enqueue_style( 'news-portal-responsive-style', get_template_directory_uri().'/assets/css/np-responsive.css?v=1.4', array(), esc_attr( $news_portal_version ) );
 
     wp_enqueue_script( 'news-portal-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), esc_attr( $news_portal_version ), true );
 

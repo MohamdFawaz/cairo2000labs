@@ -261,6 +261,9 @@
     margin-right: auto;
     display: table;
   }
+  .type-post .np-article-thumb img {
+    margin-left: 0;
+  }
 }
 
 
@@ -412,6 +415,9 @@
 
   .middle-primary .news_portal_featured_posts .layout1 .np-single-post-wrap {
     width: 98%;
+  }
+  .type-post .np-article-thumb img {
+    margin-left: 0;
   }
 }
 

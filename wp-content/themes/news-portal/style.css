@@ -3041,7 +3041,11 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
 }
 
 .type-post .np-article-thumb img {
-  margin-left: 50px;
+  clear: both;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
 }
 
 #blockCarousel .np-post-meta {
